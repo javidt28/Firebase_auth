@@ -1,0 +1,17 @@
+import { initializeApp } from 'firebase/app';
+import { getAuth } from "firebase/auth";
+
+
+const firebaseConfig = {
+    // replace with your config
+    apiKey: "",
+    authDomain: "",
+    projectId: "",
+    storageBucket: "",
+    messagingSenderId: "",
+    appId: "",
+    measurementId: ""
+};
+
+const app = initializeApp(firebaseConfig);
+export const authentication = getAuth(app);
